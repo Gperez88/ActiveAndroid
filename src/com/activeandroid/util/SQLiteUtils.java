@@ -109,7 +109,7 @@ public final class SQLiteUtils {
 
 		return entities;
 	}
-	  
+
 	public static int intQuery(final String sql, final String[] selectionArgs) {
         final Cursor cursor = Cache.openDatabase().rawQuery(sql, selectionArgs);
         final int number = processIntCursor(cursor);
